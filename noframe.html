@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+</head>
+
+<body>
+<div id="images" class="list">
+
+<img src="images/headphone.jpg" class="show">
+<img src="images/chocbar.png">
+<img src="images/hairylogo.png">
+<img src="images/groundhog.png">
+
+</div>
+<div class="clear"></div>
+
+<script>
+
+$(document).ready(function() {		
+
+	$('#images img').css({opacity: 0.0});
+	$('#images img.show').css({opacity: 1.0});
+	
+	slowZoom();
+});
+
+	function slowZoom() {
+      $("#images img.show").animate({'height' : '115%', 'width' : '115%' }, 10000, fadeOutAndSlide); 
+};
+
+function reZoom() {
+	$("#images img").css('width','100%');
+	$("#images img").css('height','100%');
+};
+
+
+function fadeOutAndSlide() {
+
+	var act = $('#images img.show');
+	// restart at first image
+	var next = (act.next().length) ? act.next() : $('#images img:first');
+	// and rezoom it
+	if(act.next().length == 0) {reZoom();}
+	
+	act.animate({opacity: 0.0}, 1000);
+	act.removeClass('show');
+	
+	next.addClass('show');
+	next.animate({opacity: 1.0}, 1000, slowZoom);
+};
+
+ </script>
+ 
+</body>
+
+</html>

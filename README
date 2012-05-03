@@ -15,5 +15,5 @@
 ********************
 automatic image scale is not implemented yet
 
-please use images with a width of 640px and a height of 268px
-or adjust your preferred image size in the main.css
+please use images with a size of 640px to 268px
+or simply adjust your preferred image size in the main.css

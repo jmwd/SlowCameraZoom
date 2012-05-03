@@ -1,0 +1,19 @@
+/*
+   _                       _         _                _                                  _   
+  (_)                     | |       | |              | |                                | |  
+   _ _ __ _____      _____| |__   __| | _____   _____| | ___  _ __  _ __ ___   ___ _ __ | |_ 
+  | | '_ ` _ \ \ /\ / / _ \ '_ \ / _` |/ _ \ \ / / _ \ |/ _ \| '_ \| '_ ` _ \ / _ \ '_ \| __|
+  | | | | | | \ V  V /  __/ |_) | (_| |  __/\ V /  __/ | (_) | |_) | | | | | |  __/ | | | |_ 
+  | |_| |_| |_|\_/\_/ \___|_.__/ \__,_|\___| \_/ \___|_|\___/| .__/|_| |_| |_|\___|_| |_|\__|
+ _/ |                                                        | |                             
+|__/                                                         |_|                             
+
+97072 wuerzburg / frankonia / germany / jmwd.info.ms
+*/
+********************
+* Slow Camera Zoom *
+********************
+automatic image scale is not implemented yet
+
+please use images with a width of 640px and a height of 268px
+or adjust your preferred image size in the main.css
